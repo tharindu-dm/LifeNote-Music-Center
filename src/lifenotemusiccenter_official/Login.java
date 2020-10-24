@@ -227,7 +227,7 @@ public class Login extends javax.swing.JFrame {
             //System.out.println(encryptedPW);
 
             String Thingy = "select*from lifenotemusiccenter.admins where "
-                    + "Username= '" + txtUsername.getText() + "' AND "
+                    + "Username= '" + usernametxt + "' AND "
                     + "Password='" + encryptedPW + "'";
             ResultSet rsT = (ResultSet) MyConn.search(Thingy);
 
@@ -243,7 +243,7 @@ public class Login extends javax.swing.JFrame {
                 //JOptionPane.showConfirmDialog(null, "Exit Frame");
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e);
         }
     }
 }

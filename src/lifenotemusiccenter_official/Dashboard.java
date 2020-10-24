@@ -74,7 +74,7 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), "Item / Stock / Information", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Ice kingdom", 0, 12))); // NOI18N
 
-        JbtnInstruments.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/Instruments icon.png"))); // NOI18N
+        JbtnInstruments.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter_official/Instruments icon.png"))); // NOI18N
         JbtnInstruments.setBorder(null);
         JbtnInstruments.setContentAreaFilled(false);
         JbtnInstruments.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -84,7 +84,7 @@ public class Dashboard extends javax.swing.JFrame {
             }
         });
 
-        JbtnAccessories.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/accessories icon.png"))); // NOI18N
+        JbtnAccessories.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter_official/accessories icon.png"))); // NOI18N
         JbtnAccessories.setBorder(null);
         JbtnAccessories.setContentAreaFilled(false);
         JbtnAccessories.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -94,7 +94,7 @@ public class Dashboard extends javax.swing.JFrame {
             }
         });
 
-        JbtnBooks.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/book icon.png"))); // NOI18N
+        JbtnBooks.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter_official/book icon.png"))); // NOI18N
         JbtnBooks.setBorder(null);
         JbtnBooks.setContentAreaFilled(false);
         JbtnBooks.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -120,7 +120,7 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel12.setText("Update History");
         jLabel12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        JbtnDeliveries.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/Instruments icon.png"))); // NOI18N
+        JbtnDeliveries.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter_official/Instruments icon.png"))); // NOI18N
         JbtnDeliveries.setBorder(null);
         JbtnDeliveries.setContentAreaFilled(false);
         JbtnDeliveries.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -181,7 +181,7 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 204, 0));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 0, 0)), "Administrator", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Ice kingdom", 0, 12))); // NOI18N
 
-        JbtnAdministrator.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/admin icon.png"))); // NOI18N
+        JbtnAdministrator.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter_official/admin icon.png"))); // NOI18N
         JbtnAdministrator.setBorder(null);
         JbtnAdministrator.setContentAreaFilled(false);
         JbtnAdministrator.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -195,7 +195,7 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel8.setText("Administrator");
         jLabel8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        JbtnAbout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/about icon.png"))); // NOI18N
+        JbtnAbout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter_official/about icon.png"))); // NOI18N
         JbtnAbout.setBorder(null);
         JbtnAbout.setContentAreaFilled(false);
         JbtnAbout.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -241,7 +241,7 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(204, 204, 204));
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED), "Customer", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Ice kingdom", 0, 12))); // NOI18N
 
-        JbtnPurchase.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/purchase icon.png"))); // NOI18N
+        JbtnPurchase.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter_official/purchase icon.png"))); // NOI18N
         JbtnPurchase.setBorder(null);
         JbtnPurchase.setContentAreaFilled(false);
         JbtnPurchase.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -255,7 +255,7 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel1.setText("Purchase");
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        JbtnCustomerHistory.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/customer history icon.png"))); // NOI18N
+        JbtnCustomerHistory.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter_official/customer history icon.png"))); // NOI18N
         JbtnCustomerHistory.setBorder(null);
         JbtnCustomerHistory.setContentAreaFilled(false);
         JbtnCustomerHistory.addActionListener(new java.awt.event.ActionListener() {
@@ -268,7 +268,7 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel4.setText("Transaction History");
         jLabel4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        JbtnBasicCal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/basic calculator icon.png"))); // NOI18N
+        JbtnBasicCal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter_official/basic calculator icon.png"))); // NOI18N
         JbtnBasicCal.setBorder(null);
         JbtnBasicCal.setContentAreaFilled(false);
         JbtnBasicCal.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -282,7 +282,7 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel3.setText("Basic Calculator");
         jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        JbtnInitiateCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/initiate customer icon.png"))); // NOI18N
+        JbtnInitiateCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter_official/initiate customer icon.png"))); // NOI18N
         JbtnInitiateCustomer.setBorder(null);
         JbtnInitiateCustomer.setContentAreaFilled(false);
         JbtnInitiateCustomer.addActionListener(new java.awt.event.ActionListener() {

@@ -113,7 +113,7 @@
         <Component class="javax.swing.JButton" name="JbtnInstruments">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/lifenotemusiccenter/Instruments icon.png"/>
+              <Image iconType="3" name="/lifenotemusiccenter_official/Instruments icon.png"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
@@ -128,7 +128,7 @@
         <Component class="javax.swing.JButton" name="JbtnAccessories">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/lifenotemusiccenter/accessories icon.png"/>
+              <Image iconType="3" name="/lifenotemusiccenter_official/accessories icon.png"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
@@ -143,7 +143,7 @@
         <Component class="javax.swing.JButton" name="JbtnBooks">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/lifenotemusiccenter/book icon.png"/>
+              <Image iconType="3" name="/lifenotemusiccenter_official/book icon.png"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
@@ -186,7 +186,7 @@
         <Component class="javax.swing.JButton" name="JbtnDeliveries">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/lifenotemusiccenter/Instruments icon.png"/>
+              <Image iconType="3" name="/lifenotemusiccenter_official/Instruments icon.png"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
@@ -261,7 +261,7 @@
         <Component class="javax.swing.JButton" name="JbtnAdministrator">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/lifenotemusiccenter/admin icon.png"/>
+              <Image iconType="3" name="/lifenotemusiccenter_official/admin icon.png"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
@@ -283,7 +283,7 @@
         <Component class="javax.swing.JButton" name="JbtnAbout">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/lifenotemusiccenter/about icon.png"/>
+              <Image iconType="3" name="/lifenotemusiccenter_official/about icon.png"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
@@ -397,7 +397,7 @@
         <Component class="javax.swing.JButton" name="JbtnPurchase">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/lifenotemusiccenter/purchase icon.png"/>
+              <Image iconType="3" name="/lifenotemusiccenter_official/purchase icon.png"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
@@ -419,7 +419,7 @@
         <Component class="javax.swing.JButton" name="JbtnCustomerHistory">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/lifenotemusiccenter/customer history icon.png"/>
+              <Image iconType="3" name="/lifenotemusiccenter_official/customer history icon.png"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
@@ -440,7 +440,7 @@
         <Component class="javax.swing.JButton" name="JbtnBasicCal">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/lifenotemusiccenter/basic calculator icon.png"/>
+              <Image iconType="3" name="/lifenotemusiccenter_official/basic calculator icon.png"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
@@ -462,7 +462,7 @@
         <Component class="javax.swing.JButton" name="JbtnInitiateCustomer">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/lifenotemusiccenter/initiate customer icon.png"/>
+              <Image iconType="3" name="/lifenotemusiccenter_official/initiate customer icon.png"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="null"/>
