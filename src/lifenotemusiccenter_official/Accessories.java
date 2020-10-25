@@ -80,6 +80,7 @@ public class Accessories extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("LNMC - Accessoiries");
+        setResizable(false);
 
         BG.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -91,7 +92,7 @@ public class Accessories extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(255, 204, 0));
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Jump To"));
 
-        JbtnInstruments.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/Instruments icon.png"))); // NOI18N
+        JbtnInstruments.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter_official/Instruments icon.png"))); // NOI18N
         JbtnInstruments.setBorder(null);
         JbtnInstruments.setContentAreaFilled(false);
         JbtnInstruments.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -105,7 +106,7 @@ public class Accessories extends javax.swing.JFrame {
         jLabel6.setText("Instruments");
         jLabel6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        JbtnBooks.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/book icon.png"))); // NOI18N
+        JbtnBooks.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter_official/book icon.png"))); // NOI18N
         JbtnBooks.setBorder(null);
         JbtnBooks.setContentAreaFilled(false);
         JbtnBooks.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -119,7 +120,7 @@ public class Accessories extends javax.swing.JFrame {
         jLabel8.setText("Books");
         jLabel8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        JbtnPurchace.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/purchase icon.png"))); // NOI18N
+        JbtnPurchace.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter_official/purchase icon.png"))); // NOI18N
         JbtnPurchace.setBorder(null);
         JbtnPurchace.setContentAreaFilled(false);
         JbtnPurchace.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);

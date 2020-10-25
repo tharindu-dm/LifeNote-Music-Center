@@ -49,7 +49,6 @@ public class UpdateHistory extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         JCB_Month = new javax.swing.JComboBox();
         JCB_Date = new javax.swing.JComboBox();
-        jLabel2 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         txtYear = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
@@ -66,13 +65,11 @@ public class UpdateHistory extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         BG.setBackground(new java.awt.Color(0, 0, 0));
-        BG.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Orbitron", 0, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 204, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Update History");
-        BG.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 837, 57));
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 0, 0)), "Search & Filters", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, null, new java.awt.Color(255, 204, 0)));
         jPanel1.setOpaque(false);
@@ -128,7 +125,7 @@ public class UpdateHistory extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(JRB_DB_TABLE)
                     .addComponent(JRB_ITEMID))
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 0, 0)), "By Date", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, null, new java.awt.Color(255, 204, 0)));
@@ -171,15 +168,10 @@ public class UpdateHistory extends javax.swing.JFrame {
                 .addComponent(JCB_Date, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(68, 68, 68)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel3)
-                        .addGap(71, 71, 71)
-                        .addComponent(jLabel4)))
+                .addContainerGap()
+                .addComponent(jLabel3)
+                .addGap(71, 71, 71)
+                .addComponent(jLabel4)
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
@@ -196,8 +188,6 @@ public class UpdateHistory extends javax.swing.JFrame {
                     .addComponent(txtYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -214,14 +204,12 @@ public class UpdateHistory extends javax.swing.JFrame {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE))
-                .addContainerGap())
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-
-        BG.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 56, -1, -1));
 
         JtblUpdateHistory.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -246,8 +234,6 @@ public class UpdateHistory extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(JtblUpdateHistory);
 
-        BG.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 216, 817, 313));
-
         Jbtn_RefreshTable.setBackground(new java.awt.Color(0, 255, 0));
         Jbtn_RefreshTable.setText("Refresh Table");
         Jbtn_RefreshTable.addActionListener(new java.awt.event.ActionListener() {
@@ -255,7 +241,6 @@ public class UpdateHistory extends javax.swing.JFrame {
                 Jbtn_RefreshTableActionPerformed(evt);
             }
         });
-        BG.add(Jbtn_RefreshTable, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 63, 209, 39));
 
         btnPrintReport.setBackground(new java.awt.Color(255, 255, 0));
         btnPrintReport.setText("Print Full Report");
@@ -264,7 +249,6 @@ public class UpdateHistory extends javax.swing.JFrame {
                 btnPrintReportActionPerformed(evt);
             }
         });
-        BG.add(btnPrintReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 113, 209, -1));
 
         btnALLDEL.setBackground(new java.awt.Color(255, 0, 51));
         btnALLDEL.setText("Delete All Update History Entries");
@@ -273,7 +257,48 @@ public class UpdateHistory extends javax.swing.JFrame {
                 btnALLDELActionPerformed(evt);
             }
         });
-        BG.add(btnALLDEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 182, 209, -1));
+
+        javax.swing.GroupLayout BGLayout = new javax.swing.GroupLayout(BG);
+        BG.setLayout(BGLayout);
+        BGLayout.setHorizontalGroup(
+            BGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BGLayout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(Jbtn_RefreshTable, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(BGLayout.createSequentialGroup()
+                .addGap(227, 227, 227)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 837, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(BGLayout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(btnALLDEL, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(BGLayout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(btnPrintReport, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(BGLayout.createSequentialGroup()
+                .addGap(13, 13, 13)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 817, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        BGLayout.setVerticalGroup(
+            BGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BGLayout.createSequentialGroup()
+                .addGroup(BGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(BGLayout.createSequentialGroup()
+                        .addGap(63, 63, 63)
+                        .addComponent(Jbtn_RefreshTable, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(BGLayout.createSequentialGroup()
+                        .addGap(182, 182, 182)
+                        .addComponent(btnALLDEL))
+                    .addGroup(BGLayout.createSequentialGroup()
+                        .addGap(113, 113, 113)
+                        .addComponent(btnPrintReport))
+                    .addGroup(BGLayout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         getContentPane().add(BG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 550));
 
@@ -654,7 +679,6 @@ public class UpdateHistory extends javax.swing.JFrame {
     private javax.swing.ButtonGroup btngrp_Name_PurchaseID;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;

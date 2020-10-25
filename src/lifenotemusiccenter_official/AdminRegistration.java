@@ -99,7 +99,7 @@ public class AdminRegistration extends javax.swing.JFrame {
         });
         getContentPane().add(JPF_PW, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 130, 243, 31));
 
-        JtogB_PW.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/eyepw.png"))); // NOI18N
+        JtogB_PW.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter_official/eyepw.png"))); // NOI18N
         JtogB_PW.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/Eye-512.png"))); // NOI18N
         JtogB_PW.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/Eye-512.png"))); // NOI18N
         JtogB_PW.addActionListener(new java.awt.event.ActionListener() {
@@ -124,7 +124,7 @@ public class AdminRegistration extends javax.swing.JFrame {
         jLabel6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 241, 243, 31));
 
-        JtogB_ConfPW.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/eyepw.png"))); // NOI18N
+        JtogB_ConfPW.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter_official/eyepw.png"))); // NOI18N
         JtogB_ConfPW.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/Eye-512.png"))); // NOI18N
         JtogB_ConfPW.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/Eye-512.png"))); // NOI18N
         JtogB_ConfPW.addActionListener(new java.awt.event.ActionListener() {

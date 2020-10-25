@@ -397,7 +397,7 @@ public class Books extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(255, 204, 0));
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Jump To"));
 
-        JbtnInstruments.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/Instruments icon.png"))); // NOI18N
+        JbtnInstruments.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter_official/Instruments icon.png"))); // NOI18N
         JbtnInstruments.setBorder(null);
         JbtnInstruments.setContentAreaFilled(false);
         JbtnInstruments.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -411,7 +411,7 @@ public class Books extends javax.swing.JFrame {
         jLabel6.setText("Instruments");
         jLabel6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        JbtnPurchase.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/purchase icon.png"))); // NOI18N
+        JbtnPurchase.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter_official/purchase icon.png"))); // NOI18N
         JbtnPurchase.setBorder(null);
         JbtnPurchase.setContentAreaFilled(false);
         JbtnPurchase.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -425,7 +425,7 @@ public class Books extends javax.swing.JFrame {
         jLabel9.setText("Purchase");
         jLabel9.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        JbtnAccessories.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter/accessories icon.png"))); // NOI18N
+        JbtnAccessories.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lifenotemusiccenter_official/accessories icon.png"))); // NOI18N
         JbtnAccessories.setBorder(null);
         JbtnAccessories.setContentAreaFilled(false);
         JbtnAccessories.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);

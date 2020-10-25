@@ -126,7 +126,7 @@
     <Component class="javax.swing.JToggleButton" name="JtogB_PW">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/lifenotemusiccenter/eyepw.png"/>
+          <Image iconType="3" name="/lifenotemusiccenter_official/eyepw.png"/>
         </Property>
         <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/lifenotemusiccenter/Eye-512.png"/>
@@ -191,7 +191,7 @@
     <Component class="javax.swing.JToggleButton" name="JtogB_ConfPW">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/lifenotemusiccenter/eyepw.png"/>
+          <Image iconType="3" name="/lifenotemusiccenter_official/eyepw.png"/>
         </Property>
         <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/lifenotemusiccenter/Eye-512.png"/>
