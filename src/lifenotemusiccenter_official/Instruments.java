@@ -595,7 +595,7 @@ public class Instruments extends javax.swing.JFrame {
                 String sqlINUP = "INSERT into grn (`DB Table`, `Item ID`, `Added Stock`,"
                         + "`Other changes_Name`, `Other changese_Brand_Author`,"
                         + "`Other changes_Type`, `Other changes_Unit Price`, `Date and Time`)"
-                        + "values('Accessories','" + txtId.getText() + "','" + stock + "',"
+                        + "values('Instruments','" + txtId.getText() + "','" + stock + "',"
                         + "'" + txtName.getText() + "','" + txtBrand.getText() + "',"
                         + "'" + txtType.getText() + "','" + txtPrice.getText() + "',current_timestamp)";
                 MyConn.save(sqlINUP);
@@ -636,7 +636,7 @@ public class Instruments extends javax.swing.JFrame {
         } else if (JRB_IBrand.isSelected()) {
             try {
                 String search = "select*from instruments where brand like"
-                        + "'" + txtType.getText() + "%'";
+                        + "'" + txtBrand.getText() + "%'";
                 ResultSet rs2 = MyConn.search(search);
                 df.setRowCount(0);
                 while (rs2.next()) {
@@ -719,6 +719,7 @@ public class Instruments extends javax.swing.JFrame {
     }//GEN-LAST:event_JbtnBooksActionPerformed
 
     private void JbtnPurchaceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JbtnPurchaceActionPerformed
+        new Dashboard().setVisible(true);
         new Purchase().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_JbtnPurchaceActionPerformed

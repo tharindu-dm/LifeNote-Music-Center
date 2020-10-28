@@ -26,7 +26,7 @@ public class Dashboard extends javax.swing.JFrame {
     Books B = new Books();
     Instruments I = new Instruments();
     Purchase P = new Purchase();
-    
+
     public Dashboard() {
         initComponents();
     }
@@ -383,14 +383,17 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void JbtnBooksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JbtnBooksActionPerformed
         new Books().setVisible(true);
+        dispose();
     }//GEN-LAST:event_JbtnBooksActionPerformed
 
     private void JbtnInstrumentsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JbtnInstrumentsActionPerformed
         new Instruments().setVisible(true);
+        dispose();
     }//GEN-LAST:event_JbtnInstrumentsActionPerformed
 
     private void JbtnAccessoriesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JbtnAccessoriesActionPerformed
         new Accessories().setVisible(true);
+        dispose();
     }//GEN-LAST:event_JbtnAccessoriesActionPerformed
 
     private void JbtnAdministratorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JbtnAdministratorActionPerformed

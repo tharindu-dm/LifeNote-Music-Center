@@ -337,8 +337,8 @@ public class UpdateHistory extends javax.swing.JFrame {
             try {
 
                 DefaultTableModel df = (DefaultTableModel) JtblUpdateHistory.getModel();
-                String Search = "SELECT * FROM lifenotemusiccenter.grn where"
-                        + "`grn`.`DB Table` = '" + jTextField1.getText() + "%'";
+                String Search = "SELECT * FROM lifenotemusiccenter.grn where "
+                        + "`DB Table` like '" + jTextField1.getText() + "%'";
 
                 ResultSet RSsearch = (ResultSet) MyConn.search(Search);
                 df.setRowCount(0);
@@ -362,8 +362,8 @@ public class UpdateHistory extends javax.swing.JFrame {
             try {
 
                 DefaultTableModel df = (DefaultTableModel) JtblUpdateHistory.getModel();
-                String Search = "SELECT * FROM lifenotemusiccenter.grn where"
-                        + "`grn`.`ID` = '" + jTextField1.getText() + "%'";
+                String Search = "SELECT * FROM lifenotemusiccenter.grn where "
+                        + "`Item ID` Like '" + jTextField1.getText() + "%'";
 
                 ResultSet RSsearch = (ResultSet) MyConn.search(Search);
                 df.setRowCount(0);
@@ -402,11 +402,12 @@ public class UpdateHistory extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPrintReportActionPerformed
 
     private void btnALLDELActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnALLDELActionPerformed
-        JOptionPane.showMessageDialog(this, "This will delete all the entries so far,"
+        SearchUodateHistory();
+        int check = JOptionPane.showConfirmDialog(this, "This will delete all the entries so far,"
                 + " forever (a very long time)" + "\n" + "Do you wish to continue?",
-                "!!! WARNING !!!", JOptionPane.YES_NO_OPTION);
-
-        try {
+                "!!! WARNING !!!", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE);
+        if (check == 0) {
+             try {
             int count = JtblUpdateHistory.getRowCount();
 
             while (count > 0) {
@@ -419,6 +420,8 @@ public class UpdateHistory extends javax.swing.JFrame {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        } else {
+        }      
     }//GEN-LAST:event_btnALLDELActionPerformed
 
     private void Jbtn_RefreshTableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Jbtn_RefreshTableActionPerformed

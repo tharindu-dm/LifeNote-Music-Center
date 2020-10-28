@@ -244,7 +244,7 @@ public class Accessories extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(jPanel1Layout.createSequentialGroup()
                             .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -266,7 +266,7 @@ public class Accessories extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtPrice))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -292,14 +292,17 @@ public class Accessories extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtType, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
+                    .addComponent(txtPrice))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtStock, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(11, 11, 11)
+                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtStock, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -538,11 +541,9 @@ public class Accessories extends javax.swing.JFrame {
 
     private void JbtnInsertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JbtnInsertActionPerformed
         try {
-            String Insert = "insert into accessories"
-                    + "(Name,Brand,Type,Unit Price,Stock) values"
-                    + "('" + txtName.getText() + "','" + txtBrand.getText() + "',"
-                    + "S'" + txtType.getText() + "','" + txtPrice.getText() + "',"
-                    + "'" + txtStock.getText() + "')";
+            String Insert = "INSERT INTO `lifenotemusiccenter`.`accessories` (`Name`,`Brand`,`Type`,`Unit Price`,`Stock`) "
+                    + "values ('" + txtName.getText() + "','" + txtBrand.getText() + "',"
+                    + "'" + txtType.getText() + "','" + txtPrice.getText() + "','" + txtStock.getText() + "')";
             MyConn.save(Insert);
 
             searchIN_UP_DEL();
@@ -589,7 +590,7 @@ public class Accessories extends javax.swing.JFrame {
             txtId.enableInputMethods(false);
 
             int rownumber = JtblSearch.getSelectedRow();
-            int stock = Integer.parseInt(txtStock.getText());
+            int stock = Integer.parseInt(JtblSearch.getValueAt(rownumber, 5) + "");
             stock = stock - 2 * stock;
 
             String delete = "Delete from accessories where ID = '"
@@ -643,7 +644,7 @@ public class Accessories extends javax.swing.JFrame {
         } else if (JRB_ABrand.isSelected()) {
             try {
                 String search = "select*from accessories where brand like"
-                        + "'" + txtType.getText() + "%'";
+                        + "'" + txtBrand.getText() + "%'";
                 ResultSet rs2 = MyConn.search(search);
                 df.setRowCount(0);
                 while (rs2.next()) {
@@ -731,8 +732,9 @@ public class Accessories extends javax.swing.JFrame {
     }//GEN-LAST:event_JbtnBooksActionPerformed
 
     private void JbtnPurchaceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JbtnPurchaceActionPerformed
+        new Dashboard().setVisible(true);
         new Purchase().setVisible(true);
-//        this.dispose();
+        this.dispose();
     }//GEN-LAST:event_JbtnPurchaceActionPerformed
 
     private void JtblSearchMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_JtblSearchMouseClicked

@@ -335,7 +335,7 @@ public class BasicCalculator extends javax.swing.JFrame {
     }//GEN-LAST:event_JbtnDivideActionPerformed
 
     private void JbtnEqualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JbtnEqualActionPerformed
-        firstValue = "0";
+//        firstValue = "0";
         double d1 = Double.parseDouble(firstValue);
         double d2 = Double.parseDouble(txtValueField.getText());
         double total = 0.0;
@@ -343,7 +343,7 @@ public class BasicCalculator extends javax.swing.JFrame {
             total = d1 + d2;
         } else if (sign.equals("-")) {
             total = d1 - d2;
-        } else if (sign.equals("X")) {
+        } else if (sign.equals("*")) {
             total = d1 * d2;
         } else if (sign.equals("/")) {
             total = d1 / d2;

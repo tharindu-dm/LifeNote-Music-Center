@@ -521,9 +521,9 @@ public class Books extends javax.swing.JFrame {
                 .addGap(6, 6, 6)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 152, Short.MAX_VALUE))
                     .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -549,11 +549,9 @@ public class Books extends javax.swing.JFrame {
 
     private void JbtnInsertActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JbtnInsertActionPerformed
         try {
-            String Insert = "insert into books"
-                    + "(Name,Author,Type,Unit Price,Stock) values"
-                    + "('" + txtName.getText() + "',"
-                    + "'" + txtAuthor.getText() + "','" + txtType.getText() + "',"
-                    + "'" + txtPrice.getText() + "','" + txtStock.getText() + "')";
+            String Insert = "INSERT INTO `lifenotemusiccenter`.`books` (`Name`,`Author`,`Type`,`Unit Price`,`Stock`) "
+                    + "values ('" + txtName.getText() + "','" + txtAuthor.getText() + "',"
+                    + "'" + txtType.getText() + "','" + txtPrice.getText() + "','" + txtStock.getText() + "')";
             MyConn.save(Insert);
 
             searchIN_UP_DEL();
@@ -613,7 +611,7 @@ public class Books extends javax.swing.JFrame {
                 String sqlINUP = "INSERT into grn (`DB Table`, `Item ID`, `Added Stock`,"
                         + "`Other changes_Name`, `Other changese_Brand_Author`,"
                         + "`Other changes_Type`, `Other changes_Unit Price`, `Date and Time`)"
-                        + "values('Accessories','" + txtId.getText() + "','" + stock + "',"
+                        + "values('Books','" + txtId.getText() + "','" + stock + "',"
                         + "'" + txtName.getText() + "','" + txtAuthor.getText() + "',"
                         + "'" + txtType.getText() + "','" + txtPrice.getText() + "',current_timestamp)";
                 MyConn.save(sqlINUP);
@@ -633,7 +631,9 @@ public class Books extends javax.swing.JFrame {
     }//GEN-LAST:event_JbtnInstrumentsActionPerformed
 
     private void JbtnPurchaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JbtnPurchaseActionPerformed
+        new Dashboard().setVisible(true);        
         new Purchase().setVisible(true);
+        new Purchase().requestFocusInWindow();
         this.dispose();
     }//GEN-LAST:event_JbtnPurchaseActionPerformed
 
@@ -683,7 +683,7 @@ public class Books extends javax.swing.JFrame {
         } else if (JRB_BAuthor.isSelected()) {
             try {
                 String search = "select*from books where author like"
-                        + "'" + txtType.getText() + "%'";
+                        + "'" + txtAuthor.getText() + "%'";
                 ResultSet rs2 = MyConn.search(search);
                 df.setRowCount(0);
                 while (rs2.next()) {
