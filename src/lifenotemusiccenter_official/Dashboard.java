@@ -5,16 +5,6 @@
  */
 package lifenotemusiccenter_official;
 
-import lifenotemusiccenter_official.Accessories;
-import lifenotemusiccenter_official.AdminRegistration;
-import lifenotemusiccenter_official.BasicCalculator;
-import lifenotemusiccenter_official.Books;
-import lifenotemusiccenter_official.CustomerTransactionHistory;
-import lifenotemusiccenter_official.Customers;
-import lifenotemusiccenter_official.Instruments;
-import lifenotemusiccenter_official.Purchase;
-import lifenotemusiccenter_official.UpdateHistory;
-import lifenotemusiccenter_official.About;
 
 /**
  *
@@ -27,6 +17,9 @@ public class Dashboard extends javax.swing.JFrame {
     Instruments I = new Instruments();
     Purchase P = new Purchase();
 
+    /**
+     * 
+     */
     public Dashboard() {
         initComponents();
     }

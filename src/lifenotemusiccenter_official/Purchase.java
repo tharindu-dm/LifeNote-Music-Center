@@ -157,8 +157,8 @@ public class Purchase extends javax.swing.JFrame {
             }
         });
 
-        txtID.setBackground(new java.awt.Color(0, 0, 0));
         txtID.setEditable(false);
+        txtID.setBackground(new java.awt.Color(0, 0, 0));
         txtID.setForeground(new java.awt.Color(255, 255, 255));
         txtID.setText("Item Identity Number");
         txtID.setBorder(null);
@@ -171,8 +171,8 @@ public class Purchase extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(255, 204, 0));
         jLabel3.setText("Item Name");
 
-        txtName.setBackground(new java.awt.Color(0, 0, 0));
         txtName.setEditable(false);
+        txtName.setBackground(new java.awt.Color(0, 0, 0));
         txtName.setForeground(new java.awt.Color(255, 255, 255));
         txtName.setText("Item Name");
         txtName.setBorder(null);
@@ -182,8 +182,8 @@ public class Purchase extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 204, 0));
         jLabel4.setText("Item Brand");
 
-        txtBrand.setBackground(new java.awt.Color(0, 0, 0));
         txtBrand.setEditable(false);
+        txtBrand.setBackground(new java.awt.Color(0, 0, 0));
         txtBrand.setForeground(new java.awt.Color(255, 255, 255));
         txtBrand.setText("Brand TM Name / Author");
         txtBrand.setBorder(null);
@@ -193,8 +193,8 @@ public class Purchase extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(255, 204, 0));
         jLabel5.setText("Item Type");
 
-        txtType.setBackground(new java.awt.Color(0, 0, 0));
         txtType.setEditable(false);
+        txtType.setBackground(new java.awt.Color(0, 0, 0));
         txtType.setForeground(new java.awt.Color(255, 255, 255));
         txtType.setText("Type of the Item");
         txtType.setBorder(null);
@@ -219,8 +219,8 @@ public class Purchase extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(255, 204, 0));
         jLabel7.setText("Total");
 
-        txtTotal.setBackground(new java.awt.Color(0, 0, 0));
         txtTotal.setEditable(false);
+        txtTotal.setBackground(new java.awt.Color(0, 0, 0));
         txtTotal.setForeground(new java.awt.Color(255, 255, 255));
         txtTotal.setText("Total Price");
         txtTotal.setBorder(null);
@@ -295,7 +295,7 @@ public class Purchase extends javax.swing.JFrame {
                             .addComponent(txtType, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap())
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 627, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -393,7 +393,7 @@ public class Purchase extends javax.swing.JFrame {
         });
 
         jPanel3.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 0, 0)), "Select Payment Option", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, null, new java.awt.Color(255, 204, 0)));
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 0, 0)), "Select Payment Option", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(255, 204, 0))); // NOI18N
         jPanel3.setOpaque(false);
 
         btngrpSelectPaymentOption.add(JRB_PayInCash);
@@ -499,7 +499,7 @@ public class Purchase extends javax.swing.JFrame {
         });
 
         jPanel6.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 0, 0)), "Delivery Stats", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, null, new java.awt.Color(255, 204, 0)));
+        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 0, 0)), "Delivery Stats", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(255, 204, 0))); // NOI18N
         jPanel6.setOpaque(false);
 
         btngrpDeliveryYES_NO.add(JRB_DeliveryYES);
@@ -685,8 +685,8 @@ public class Purchase extends javax.swing.JFrame {
 
         getContentPane().add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1120, 540));
 
-        java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
-        setBounds((screenSize.width-1119)/2, (screenSize.height-568)/2, 1119, 568);
+        setSize(new java.awt.Dimension(1119, 568));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
     private void jTbl_ItemMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTbl_ItemMouseClicked
         int row = jTbl_Item.getSelectedRow();
