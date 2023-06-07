@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PurchaseReport" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b2766361-739f-4b67-8881-07f0a803fd8f">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="208"/>
+	<property name="ireport.y" value="48"/>
+	<field name="UH ID" class="java.lang.String"/>
+	<field name="DB Table" class="java.lang.String"/>
+	<field name="Item ID" class="java.lang.String"/>
+	<field name="Added Stock" class="java.lang.String"/>
+	<field name="OC Name" class="java.lang.String"/>
+	<field name="OC Brand/Author" class="java.lang.String"/>
+	<field name="OC Type" class="java.lang.String"/>
+	<field name="OC Unit Price" class="java.lang.String"/>
+	<field name="Date and Time" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="152" splitType="Stretch">
+			<image>
+				<reportElement uuid="074546a5-df4a-498c-89ea-c9e778c1950f" x="0" y="0" width="110" height="99"/>
+				<imageExpression><![CDATA["C:\\Users\\Tharindu Munasinghe\\Documents\\NetBeansProjects\\LifeNoteMusicCenter\\src\\lifenotemusiccenter\\logo.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="6d6a780b-6a58-4118-91df-222fbd4d50b3" x="110" y="0" width="445" height="49"/>
+				<textElement textAlignment="Center">
+					<font fontName="Altoys just personal only" size="46"/>
+				</textElement>
+				<text><![CDATA[Life Note Music Center]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7d54388d-8fc1-446f-8ba5-467dc2c5bf91" x="110" y="49" width="445" height="30"/>
+				<textElement textAlignment="Center">
+					<font fontName="Agency FB" size="22" isBold="false" isUnderline="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[First Place To Buy All You Need]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="442c340e-46a1-410c-ae4f-ffd79e739f0b" x="110" y="99" width="110" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[DATE & TIME]]></text>
+			</staticText>
+			<textField pattern="EEE, d MMM yyyy HH:mm:ss Z">
+				<reportElement uuid="d6d06962-9e26-4984-be0d-b719803ff57d" x="363" y="99" width="192" height="20"/>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="88b40b6f-2af6-467f-b197-41262d3b600f" x="110" y="79" width="445" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Agency FB" size="16" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[0XX - XXX - XXXX / 0XX - XXX - XXXX]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="70f423b1-ffa6-4abb-bd42-53ae768aab2c" x="0" y="0" width="555" height="28"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Orbitron" size="24" isBold="false"/>
+				</textElement>
+				<text><![CDATA[SYSTEM UPDATE HISTORY RECORD]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="37" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="405b6614-c9b4-43d0-ac1e-dea152688f45" x="0" y="16" width="555" height="15"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a71b0d54-0f25-4b5b-a160-56be10a25888" x="0" y="2" width="38" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[UH ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="43ac53ce-1c6a-4845-8633-f1894fe085e6" x="38" y="2" width="60" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[DB Table]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="364e9738-50e0-4d07-9f71-ad3c9eb281c7" x="98" y="2" width="54" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Item ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8c57b909-b059-4dc0-bf10-b0469f6b567b" x="152" y="2" width="65" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Added Stock]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cfed0e5f-4d06-4ce8-ae3d-1cb77a86e2f7" x="217" y="2" width="64" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[OC Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="87818929-b5a7-4564-b721-be12eb435bb6" x="281" y="2" width="82" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[OC Brand/Author]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d463b16d-7a76-4319-b917-d5bc9e125e4e" x="479" y="2" width="76" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Date and Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f6fbe6cb-7552-423e-b5fe-21c7068051c1" x="363" y="2" width="48" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[OC Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b37c6c62-1835-4509-a86a-b14f64e58a2c" x="411" y="2" width="68" height="20"/>
+				<textElement textAlignment="Center">
+					<font isBold="false" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[OC Unit Price]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement uuid="1e7fa8e8-c14e-4beb-b2ed-0fafb1256e16" x="0" y="2" width="38" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{UH ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1c7dbf50-6942-4b51-a10d-9460dc410b66" x="38" y="2" width="60" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{DB Table}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ad547a46-8450-4c93-9881-5b1099c20bcb" x="98" y="2" width="54" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Item ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a43879ca-57d5-4a65-a4eb-993419416ee1" x="152" y="2" width="65" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Added Stock}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="aa4feb1e-4e27-41e1-9858-3a3caa2b8c1c" x="217" y="2" width="64" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{OC Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="41fc043d-c542-4919-acd4-4cb7b2e8720d" x="281" y="2" width="82" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{OC Brand/Author}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3b583928-953e-4285-9584-9064bc915824" x="479" y="0" width="76" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{Date and Time}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="bc7c76e4-b133-4c8d-a018-6e0d79878161" x="363" y="2" width="48" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{OC Type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="87f06281-ef8b-4fbf-b15e-f4a96bf4ee53" x="411" y="2" width="68" height="20"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{OC Unit Price}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="28" splitType="Stretch">
+			<textField pattern="">
+				<reportElement uuid="c26ff217-3dca-47aa-917b-e33346af2a97" x="430" y="12" width="125" height="16"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="fe98e1ac-a63e-45da-89cf-75fc2e6fe62d" x="349" y="12" width="81" height="16"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Page:]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="18" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="6f28383d-62d2-4769-9239-1c48eca3f506" x="0" y="2" width="555" height="16"/>
+				<textElement textAlignment="Center">
+					<font fontName="OCR A Extended" size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SYSTEM BY \M/ETAL TRIX SOFTWARE.ORG	Tel: 0XX-XXX-XXXX]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="149" splitType="Stretch"/>
+	</summary>
+</jasperReport>
